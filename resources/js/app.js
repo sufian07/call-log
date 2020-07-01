@@ -27,6 +27,21 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import App from './App.vue';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import DateRangePicker from 'vue2-daterange-picker';
+import VueApexCharts from 'vue-apexcharts'
+
+Vue.component('date-range-picker', DateRangePicker);
+Vue.component('apexchart', VueApexCharts);
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
 const app = new Vue({
-    el: '#app',
+  el: '#app',
+  components: {
+    App
+  },
+  render: h => h(App)
 });

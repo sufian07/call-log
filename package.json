@@ -24,6 +24,11 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "bootstrap-vue": "^2.15.0"
+        "apexcharts": "^3.19.3",
+        "bootstrap-vue": "^2.15.0",
+        "moment": "^2.27.0",
+        "portal-vue": "^2.1.7",
+        "vue-apexcharts": "^1.5.3",
+        "vue2-daterange-picker": "^0.5.1"
     }
 }
